@@ -1,0 +1,3 @@
+Job Title: Python / Backend Developer
+Key Requirements:
+Hiring a Python Backend Engineer with experience in FastAPI, Django, Docker, PostgreSQL, REST APIs, and Git.

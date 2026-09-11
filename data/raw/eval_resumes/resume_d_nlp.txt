@@ -1,0 +1,16 @@
+Taylor Brooks
+Email: taylor.brooks@eval.test | Phone: +1-555-0104
+
+SUMMARY
+NLP Engineer experienced in Natural Language Processing, Hugging Face Transformers, NLTK, spaCy, and text classification.
+
+SKILLS
+Python, NLP, Hugging Face, Transformers, NLTK, spaCy, PyTorch, Text Classification, BERT, LLMs
+
+EXPERIENCE
+NLP Engineer | AI Labs (2023 - Present)
+- Fine-tuned BERT models using Hugging Face Transformers.
+- Preprocessed large unstructured text datasets using NLTK and spaCy.
+
+EDUCATION
+MS in Artificial Intelligence

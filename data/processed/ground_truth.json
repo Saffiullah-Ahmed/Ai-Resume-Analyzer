@@ -1,0 +1,41 @@
+{
+  "evaluation_note": "Ground truth is an evaluation benchmark reference, not an absolute truth. Job suitability contains inherently subjective domain nuances.",
+  "test_cases": [
+    {
+      "candidate_id": "resume_a_ml",
+      "expected_top_role": "Machine Learning Engineer",
+      "acceptable_top_3_roles": [ "Machine Learning Engineer", "Data Scientist", "Python Developer" ],
+      "expected_skills": [ "python", "pytorch", "tensorflow", "scikit-learn", "pandas", "numpy", "sql", "machine learning", "deep learning", "mlops", "git" ]
+    },
+    {
+      "candidate_id": "resume_b_data_analyst",
+      "expected_top_role": "Data Analyst",
+      "acceptable_top_3_roles": [ "Data Analyst", "Business Intelligence Analyst", "Data Scientist" ],
+      "expected_skills": [ "sql", "postgresql", "pandas", "numpy", "tableau", "power bi", "excel", "data analysis", "statistics", "python" ]
+    },
+    {
+      "candidate_id": "resume_c_python_dev",
+      "expected_top_role": "Python Developer",
+      "acceptable_top_3_roles": [ "Python Developer", "Software Engineer", "Backend Developer" ],
+      "expected_skills": [ "python", "fastapi", "django", "postgresql", "docker", "rest api", "git", "linux", "microservices", "ci/cd" ]
+    },
+    {
+      "candidate_id": "resume_d_nlp",
+      "expected_top_role": "NLP Engineer",
+      "acceptable_top_3_roles": [ "NLP Engineer", "Machine Learning Engineer", "Data Scientist" ],
+      "expected_skills": [ "python", "nlp", "hugging face", "transformers", "nltk", "spacy", "pytorch", "text classification", "bert", "llms" ]
+    },
+    {
+      "candidate_id": "resume_e_cv",
+      "expected_top_role": "Computer Vision Engineer",
+      "acceptable_top_3_roles": [ "Computer Vision Engineer", "Machine Learning Engineer", "Software Engineer" ],
+      "expected_skills": [ "python", "opencv", "pytorch", "computer vision", "image processing", "object detection", "yolo", "convolutional neural networks", "c++" ]
+    },
+    {
+      "candidate_id": "resume_f_weak",
+      "expected_top_role": "Unmatched / Low Suitability",
+      "acceptable_top_3_roles": [],
+      "expected_skills": [ "microsoft office", "communication", "customer service", "word", "powerpoint" ]
+    }
+  ]
+}

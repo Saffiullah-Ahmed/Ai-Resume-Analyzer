@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-09-10 11:20:07",
+    "candidate_name": "ALEX MORGAN",
+    "job_title": "Junior Machine Learning Engineer",
+    "skill_match_score": 62.5,
+    "tfidf_similarity_score": 41.57,
+    "skill_weight": 0.6,
+    "tfidf_weight": 0.4,
+    "composite_score": 54.13
+}

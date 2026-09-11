@@ -1,0 +1,33 @@
+ALEX MORGAN
+Email: alex.morgan.test@example.com | Phone: +1 (555) 019-2834
+Location: Seattle, WA | GitHub: github.com/alexmorgan-demo | LinkedIn: linkedin.com/in/alexmorgan-demo
+PROFESSIONAL SUMMARY
+Motivated Computer Science graduate with hands-on experience in building predictive machine learning models, performing exploratory data analysis, and developing data pipelines. Strong foundation in Python, statistical modeling, and data manipulation.
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology - Graduated: May 2025
+GPA: 3.8/4.0
+TECHNICAL SKILLS
+- Programming Languages: Python, SQL, C++, HTML/CSS
+- Machine Learning & Data Science: Scikit-learn, NumPy, Pandas, TensorFlow, Data Analysis, Statistical Modeling
+- Developer Tools & Version Control: Git, GitHub, VS Code, Jupyter Notebooks
+- Additional Skills: Web Scraping, Graphic Design, Technical Writing
+PROJECTS
+AI Article Summarizer & Keyword Extractor
+- Developed an automated NLP pipeline using Python and NLTK to parse news articles and generate key summaries.
+- Achieved an 85% accuracy rate in main entity recognition across 200+ sample articles.
+Predictive Customer Churn Model
+- Built a supervised classification model using Scikit-learn and Logistic Regression on a dataset of 10,000 customers.
+- Cleaned and preprocessed unstructured feature data using Pandas and NumPy, boosting model recall by 12%.
+WORK EXPERIENCE
+Machine Learning Intern | Apex Tech Solutions
+June 2024 - August 2024
+- Assisted in preprocessing structured tabular datasets using Pandas and NumPy for internal analytics dashboards.
+- Evaluated machine learning model metrics using Scikit-learn performance evaluation tools.
+- Collaborated with engineering teams using Git and GitHub for version control.
+CERTIFICATIONS
+- Coursera: Machine Learning Specialization (DeepLearning.AI)
+- Python for Data Science and Machine Learning Bootcamp
+LANGUAGES
+- English (Native)
+- Spanish (Intermediate)

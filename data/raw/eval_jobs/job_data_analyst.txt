@@ -1,0 +1,4 @@
+Job Title: Data Analyst
+Key Requirements:
+Seeking a Data Analyst skilled in SQL, Pandas, Tableau, Power BI, and Excel. 
+Responsibilities include creating business reports, writing database queries, and conducting statistical data analysis.

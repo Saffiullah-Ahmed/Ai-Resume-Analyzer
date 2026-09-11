@@ -1,0 +1,94 @@
+{
+    "candidate_name": "ALEX MORGAN",
+    "input_skills": [
+        "C++",
+        "CSS",
+        "Data Analysis",
+        "Exploratory Data Analysis",
+        "Git",
+        "GitHub",
+        "Graphic Design",
+        "HTML",
+        "HTML/CSS",
+        "Jupyter Notebooks",
+        "Machine Learning",
+        "NLP",
+        "NumPy",
+        "Pandas",
+        "Python",
+        "SQL",
+        "Scikit-learn",
+        "Statistical Modeling",
+        "Technical Writing",
+        "TensorFlow",
+        "VS Code",
+        "Web Scraping"
+    ],
+    "recommendations": [
+        {
+            "role_id": "ml_engineer",
+            "role_name": "Machine Learning Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 92.45,
+            "matched_skills": [
+                "git",
+                "machine learning",
+                "numpy",
+                "pandas",
+                "python",
+                "scikit-learn",
+                "sql"
+            ],
+            "missing_skills": [
+                "docker"
+            ],
+            "high_priority_gaps": [],
+            "explanation": "Strong Match (92.45%). Strong skill alignment in [git, machine learning, numpy]. Focus on acquiring [None] to boost compatibility."
+        },
+        {
+            "role_id": "data_scientist",
+            "role_name": "Data Scientist",
+            "category": "Data Science",
+            "match_score": 73.21,
+            "matched_skills": [
+                "machine learning",
+                "numpy",
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data visualization",
+                "r",
+                "statistics"
+            ],
+            "high_priority_gaps": [
+                "statistics"
+            ],
+            "explanation": "Strong Match (73.21%). Strong skill alignment in [machine learning, numpy, pandas]. Focus on acquiring [statistics] to boost compatibility."
+        },
+        {
+            "role_id": "data_analyst",
+            "role_name": "Data Analyst",
+            "category": "Data Analytics",
+            "match_score": 60.71,
+            "matched_skills": [
+                "data analysis",
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data visualization",
+                "excel",
+                "power bi",
+                "tableau"
+            ],
+            "high_priority_gaps": [
+                "data visualization",
+                "excel"
+            ],
+            "explanation": "Moderate Match (60.71%). Strong skill alignment in [data analysis, pandas, python]. Focus on acquiring [data visualization, excel] to boost compatibility."
+        }
+    ]
+}

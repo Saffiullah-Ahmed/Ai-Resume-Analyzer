@@ -1,0 +1,16 @@
+Casey Drew
+Email: casey.drew@eval.test | Phone: +1-555-0105
+
+SUMMARY
+Computer Vision Specialist proficient in OpenCV, PyTorch, Image Processing, YOLO, and Object Detection.
+
+SKILLS
+Python, OpenCV, PyTorch, Computer Vision, Image Processing, Object Detection, YOLO, Convolutional Neural Networks, C++
+
+EXPERIENCE
+Vision Engineer | Robotics Solutions (2022 - Present)
+- Trained custom YOLO models for real-time object detection.
+- Developed image preprocessing pipelines with OpenCV.
+
+EDUCATION
+BS in Computer Vision & Robotics

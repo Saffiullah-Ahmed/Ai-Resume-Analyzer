@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+venv/
+venv_test/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Streamlit Local Settings & Cache
+.streamlit/
+*.log
+
+# Pytest & Coverage Outputs
+.pytest_cache/
+.coverage
+htmlcov/
+*.lprof
+
+# Data & Upload Outputs (Ignore actual user resumes/temp files)
+data/uploads/*
+!data/uploads/.gitkeep
+logs/*.log
+temp/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+.vs/
+venv/
+venv_test/
+__pycache__/

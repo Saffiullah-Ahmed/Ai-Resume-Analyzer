@@ -1,0 +1,24 @@
+{
+    "candidate_name": "ALEX MORGAN",
+    "job_title": "Junior Machine Learning Engineer",
+    "skill_matching": {
+        "score_percentage": 100.0,
+        "matched_skills": [
+            "machine learning",
+            "python",
+            "sql"
+        ],
+        "missing_skills": [],
+        "total_matched": 3
+    },
+    "text_similarity": {
+        "method": "TF-IDF + Cosine Similarity",
+        "raw_score": 0.1886,
+        "score_percentage": 18.86
+    },
+    "composite_score": {
+        "final_percentage": 67.54,
+        "skill_weight": 0.6,
+        "tfidf_weight": 0.4
+    }
+}

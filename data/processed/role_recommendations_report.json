@@ -1,0 +1,149 @@
+{
+    "candidate_name": "Jordan Lee",
+    "total_roles_evaluated": 6,
+    "rankings": [
+        {
+            "role_id": "ml_engineer",
+            "role_name": "Machine Learning Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 67.92,
+            "matched_skills": [
+                "docker",
+                "git",
+                "pandas",
+                "python",
+                "scikit-learn",
+                "sql"
+            ],
+            "missing_skills": [
+                "machine learning",
+                "numpy"
+            ],
+            "high_priority_gaps": [
+                "machine learning",
+                "numpy"
+            ]
+        },
+        {
+            "role_id": "data_scientist",
+            "role_name": "Data Scientist",
+            "category": "Data Science",
+            "match_score": 42.86,
+            "matched_skills": [
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data visualization",
+                "machine learning",
+                "numpy",
+                "r",
+                "statistics"
+            ],
+            "high_priority_gaps": [
+                "machine learning",
+                "numpy",
+                "statistics"
+            ]
+        },
+        {
+            "role_id": "data_analyst",
+            "role_name": "Data Analyst",
+            "category": "Data Analytics",
+            "match_score": 42.86,
+            "matched_skills": [
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data analysis",
+                "data visualization",
+                "excel",
+                "power bi",
+                "tableau"
+            ],
+            "high_priority_gaps": [
+                "data analysis",
+                "data visualization",
+                "excel"
+            ]
+        },
+        {
+            "role_id": "python_developer",
+            "role_name": "Python Developer",
+            "category": "Software Engineering",
+            "match_score": 39.62,
+            "matched_skills": [
+                "git",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "django",
+                "fastapi",
+                "flask",
+                "object-oriented programming",
+                "rest api"
+            ],
+            "high_priority_gaps": [
+                "django",
+                "fastapi",
+                "flask",
+                "rest api"
+            ]
+        },
+        {
+            "role_id": "ai_engineer",
+            "role_name": "AI Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 30.51,
+            "matched_skills": [
+                "git",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "deep learning",
+                "machine learning",
+                "natural language processing",
+                "pytorch",
+                "tensorflow"
+            ],
+            "high_priority_gaps": [
+                "deep learning",
+                "machine learning",
+                "natural language processing",
+                "pytorch",
+                "tensorflow"
+            ]
+        },
+        {
+            "role_id": "nlp_engineer",
+            "role_name": "NLP Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 16.13,
+            "matched_skills": [
+                "python"
+            ],
+            "missing_skills": [
+                "deep learning",
+                "natural language processing",
+                "nlp",
+                "nltk",
+                "spacy",
+                "text classification",
+                "transformers"
+            ],
+            "high_priority_gaps": [
+                "deep learning",
+                "natural language processing",
+                "nlp",
+                "nltk",
+                "spacy",
+                "transformers"
+            ]
+        }
+    ]
+}

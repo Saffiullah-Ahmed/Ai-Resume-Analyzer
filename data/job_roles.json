@@ -1,0 +1,94 @@
+{
+  "roles": [
+    {
+      "role_id": "ai_engineer",
+      "role_name": "AI Engineer",
+      "category": "Artificial Intelligence",
+      "weighted_skills": {
+        "python": 1.0,
+        "machine learning": 1.0,
+        "deep learning": 1.0,
+        "tensorflow": 0.7,
+        "pytorch": 0.7,
+        "natural language processing": 0.7,
+        "sql": 0.4,
+        "git": 0.4
+      }
+    },
+    {
+      "role_id": "ml_engineer",
+      "role_name": "Machine Learning Engineer",
+      "category": "Artificial Intelligence",
+      "weighted_skills": {
+        "python": 1.0,
+        "machine learning": 1.0,
+        "scikit-learn": 0.7,
+        "pandas": 0.7,
+        "numpy": 0.7,
+        "sql": 0.4,
+        "git": 0.4,
+        "docker": 0.4
+      }
+    },
+    {
+      "role_id": "data_scientist",
+      "role_name": "Data Scientist",
+      "category": "Data Science",
+      "weighted_skills": {
+        "python": 1.0,
+        "machine learning": 1.0,
+        "statistics": 0.7,
+        "pandas": 0.7,
+        "numpy": 0.7,
+        "sql": 0.7,
+        "data visualization": 0.4,
+        "r": 0.4
+      }
+    },
+    {
+      "role_id": "data_analyst",
+      "role_name": "Data Analyst",
+      "category": "Data Analytics",
+      "weighted_skills": {
+        "sql": 1.0,
+        "data analysis": 1.0,
+        "python": 0.7,
+        "pandas": 0.7,
+        "excel": 0.7,
+        "data visualization": 0.7,
+        "tableau": 0.4,
+        "power bi": 0.4
+      }
+    },
+    {
+      "role_id": "nlp_engineer",
+      "role_name": "NLP Engineer",
+      "category": "Artificial Intelligence",
+      "weighted_skills": {
+        "python": 1.0,
+        "natural language processing": 1.0,
+        "nlp": 1.0,
+        "transformers": 0.7,
+        "spacy": 0.7,
+        "nltk": 0.7,
+        "deep learning": 0.7,
+        "text classification": 0.4
+      }
+    },
+    {
+      "role_id": "python_developer",
+      "role_name": "Python Developer",
+      "category": "Software Engineering",
+      "weighted_skills": {
+        "python": 1.0,
+        "django": 0.7,
+        "flask": 0.7,
+        "fastapi": 0.7,
+        "sql": 0.7,
+        "rest api": 0.7,
+        "git": 0.4,
+        "object-oriented programming": 0.4
+      }
+    }
+  ]
+}

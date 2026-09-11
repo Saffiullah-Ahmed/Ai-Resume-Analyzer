@@ -1,0 +1,16 @@
+Morgan Vance
+Email: morgan.vance@eval.test | Phone: +1-555-0103
+
+SUMMARY
+Software Engineer specializing in backend development using Python, FastAPI, Django, Docker, and PostgreSQL.
+
+SKILLS
+Python, FastAPI, Django, PostgreSQL, Docker, REST API, Git, Linux, Microservices, CI/CD
+
+EXPERIENCE
+Backend Engineer | Dev Studio (2020 - Present)
+- Developed RESTful APIs using Python and FastAPI.
+- Deployed microservices using Docker and automated CI/CD pipelines.
+
+EDUCATION
+BS in Software Engineering

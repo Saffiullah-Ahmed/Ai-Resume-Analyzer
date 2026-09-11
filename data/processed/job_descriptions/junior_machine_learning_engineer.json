@@ -1,0 +1,23 @@
+{
+    "job_title": "Junior Machine Learning Engineer",
+    "company": "Apex Tech Solutions",
+    "summary": "We are looking for a Junior Machine Learning Engineer to help process datasets and build predictive models.",
+    "responsibilities": [
+        "Preprocess tabular data using Python, Pandas, and NumPy.",
+        "Train machine learning models using Scikit-learn.",
+        "Collaborate with engineers using Git and GitHub."
+    ],
+    "required_skills": [
+        "Machine Learning",
+        "Python",
+        "SQL"
+    ],
+    "preferred_skills": [],
+    "education": [
+        "Bachelor's degree in Computer Science or related field."
+    ],
+    "experience": [
+        "0-2 years of experience."
+    ],
+    "raw_text": "Junior Machine Learning Engineer\nApex Tech Solutions - Tech City, NY\n\nJOB SUMMARY\nWe are looking for a Junior Machine Learning Engineer to help process datasets and build predictive models.\n\nRESPONSIBILITIES\n- Preprocess tabular data using Python, Pandas, and NumPy.\n- Train machine learning models using Scikit-learn.\n- Collaborate with engineers using Git and GitHub.\n\nREQUIREMENTS\n- Bachelor's degree in Computer Science or related field.\n- Strong knowledge of Python, SQL, and Machine Learning.\n- 0-2 years of experience."
+}

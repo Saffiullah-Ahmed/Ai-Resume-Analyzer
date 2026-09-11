@@ -1,0 +1,102 @@
+{
+    "candidate_name": "Sarah Connor",
+    "job_title": "Senior AI / ML Specialist",
+    "overall_match_score": 53.33,
+    "required_skills_score": 50.0,
+    "preferred_skills_score": 66.67,
+    "required_skills": {
+        "matched_skills": [
+            "python",
+            "machine learning"
+        ],
+        "missing_skills": [
+            "deep learning",
+            "pytorch"
+        ]
+    },
+    "preferred_skills": {
+        "matched_skills": [
+            "sql",
+            "git"
+        ],
+        "missing_skills": [
+            "docker"
+        ]
+    },
+    "total_resume_skills_count": 6,
+    "total_job_required_count": 4,
+    "total_job_preferred_count": 3,
+    "saved_report_path": "",
+    "recommended_career_paths": [
+        {
+            "role_id": "ml_engineer",
+            "role_name": "Machine Learning Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 79.25,
+            "matched_skills": [
+                "git",
+                "machine learning",
+                "pandas",
+                "python",
+                "scikit-learn",
+                "sql"
+            ],
+            "missing_skills": [
+                "docker",
+                "numpy"
+            ],
+            "high_priority_gaps": [
+                "numpy"
+            ],
+            "explanation": "Strong Match (79.25%). Strong skill alignment in [git, machine learning, pandas]. Focus on acquiring [numpy] to boost compatibility."
+        },
+        {
+            "role_id": "data_scientist",
+            "role_name": "Data Scientist",
+            "category": "Data Science",
+            "match_score": 60.71,
+            "matched_skills": [
+                "machine learning",
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data visualization",
+                "numpy",
+                "r",
+                "statistics"
+            ],
+            "high_priority_gaps": [
+                "numpy",
+                "statistics"
+            ],
+            "explanation": "Moderate Match (60.71%). Strong skill alignment in [machine learning, pandas, python]. Focus on acquiring [numpy, statistics] to boost compatibility."
+        },
+        {
+            "role_id": "ai_engineer",
+            "role_name": "AI Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 47.46,
+            "matched_skills": [
+                "git",
+                "machine learning",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "deep learning",
+                "natural language processing",
+                "pytorch",
+                "tensorflow"
+            ],
+            "high_priority_gaps": [
+                "deep learning",
+                "natural language processing",
+                "pytorch",
+                "tensorflow"
+            ],
+            "explanation": "Moderate Match (47.46%). Strong skill alignment in [git, machine learning, python]. Focus on acquiring [deep learning, natural language processing] to boost compatibility."
+        }
+    ]
+}

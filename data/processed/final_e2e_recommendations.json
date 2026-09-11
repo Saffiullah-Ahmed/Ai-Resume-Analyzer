@@ -1,0 +1,99 @@
+{
+    "timestamp": "2026-09-10T12:44:21.882621",
+    "pipeline_status": "SUCCESS",
+    "candidate": {
+        "name": "Alexander Wright",
+        "extracted_skills": [
+            "Python",
+            "SQL",
+            "Pandas",
+            "NumPy",
+            "Scikit-Learn",
+            "Docker",
+            "Git",
+            "TensorFlow",
+            "Data Analysis"
+        ],
+        "normalized_skills": [
+            "python",
+            "sql",
+            "pandas",
+            "numpy",
+            "scikit-learn",
+            "docker",
+            "git",
+            "tensorflow",
+            "data analysis"
+        ]
+    },
+    "recommendations": [
+        {
+            "role_id": "ml_engineer",
+            "role_name": "Machine Learning Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 81.13,
+            "matched_skills": [
+                "docker",
+                "git",
+                "numpy",
+                "pandas",
+                "python",
+                "scikit-learn",
+                "sql"
+            ],
+            "missing_skills": [
+                "machine learning"
+            ],
+            "high_priority_gaps": [
+                "machine learning"
+            ],
+            "explanation": "Strong Match (81.13%). Strong skill alignment in [docker, git, numpy]. Focus on acquiring [machine learning] to boost compatibility."
+        },
+        {
+            "role_id": "data_analyst",
+            "role_name": "Data Analyst",
+            "category": "Data Analytics",
+            "match_score": 60.71,
+            "matched_skills": [
+                "data analysis",
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data visualization",
+                "excel",
+                "power bi",
+                "tableau"
+            ],
+            "high_priority_gaps": [
+                "data visualization",
+                "excel"
+            ],
+            "explanation": "Moderate Match (60.71%). Strong skill alignment in [data analysis, pandas, python]. Focus on acquiring [data visualization, excel] to boost compatibility."
+        },
+        {
+            "role_id": "data_scientist",
+            "role_name": "Data Scientist",
+            "category": "Data Science",
+            "match_score": 55.36,
+            "matched_skills": [
+                "numpy",
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data visualization",
+                "machine learning",
+                "r",
+                "statistics"
+            ],
+            "high_priority_gaps": [
+                "machine learning",
+                "statistics"
+            ],
+            "explanation": "Moderate Match (55.36%). Strong skill alignment in [numpy, pandas, python]. Focus on acquiring [machine learning, statistics] to boost compatibility."
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+==================================================
+                 JOB MATCH REPORT                 
+==================================================
+
+Candidate Name : ALEX MORGAN
+Job Position   : Junior Machine Learning Engineer
+
+SKILL MATCHING ANALYSIS
+-----------------------
+Matched Skills:
+  - machine learning
+  - python
+  - sql
+
+Missing Skills:
+  - None
+
+Skill Match Score: 100.0%
+
+TEXT SIMILARITY ANALYSIS
+------------------------
+Method           : TF-IDF + Cosine Similarity
+Similarity Score : 18.86%
+
+FINAL EVALUATION
+----------------
+Overall Match    : 67.54%
+Scoring Model    : Skill Match (60%) + Text Similarity (40%)
+==================================================

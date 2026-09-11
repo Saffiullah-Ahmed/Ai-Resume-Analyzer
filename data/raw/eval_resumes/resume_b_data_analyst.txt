@@ -1,0 +1,16 @@
+Jordan Reed
+Email: jordan.reed@eval.test | Phone: +1-555-0102
+
+SUMMARY
+Data Analyst focused on SQL query optimization, Tableau dashboard creation, and exploratory data analysis using Pandas and Excel.
+
+SKILLS
+SQL, PostgreSQL, Pandas, NumPy, Tableau, Power BI, Excel, Data Analysis, Statistics, Python
+
+EXPERIENCE
+Data Analyst | Analytics Inc (2021 - Present)
+- Designed interactive Power BI and Tableau dashboards for business metrics.
+- Executed complex SQL queries to extract multi-table datasets.
+
+EDUCATION
+BS in Statistics

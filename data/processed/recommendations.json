@@ -1,0 +1,126 @@
+{
+    "timestamp": "2026-09-10T12:40:26.497093",
+    "candidate_name": "Sarah Connor",
+    "total_recommendations": 5,
+    "recommendations": [
+        {
+            "role_id": "ml_engineer",
+            "role_name": "Machine Learning Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 79.25,
+            "matched_skills": [
+                "git",
+                "machine learning",
+                "pandas",
+                "python",
+                "scikit-learn",
+                "sql"
+            ],
+            "missing_skills": [
+                "docker",
+                "numpy"
+            ],
+            "high_priority_gaps": [
+                "numpy"
+            ],
+            "explanation": "Strong Match (79.25%). Strong skill alignment in [git, machine learning, pandas]. Focus on acquiring [numpy] to boost compatibility."
+        },
+        {
+            "role_id": "data_scientist",
+            "role_name": "Data Scientist",
+            "category": "Data Science",
+            "match_score": 60.71,
+            "matched_skills": [
+                "machine learning",
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data visualization",
+                "numpy",
+                "r",
+                "statistics"
+            ],
+            "high_priority_gaps": [
+                "numpy",
+                "statistics"
+            ],
+            "explanation": "Moderate Match (60.71%). Strong skill alignment in [machine learning, pandas, python]. Focus on acquiring [numpy, statistics] to boost compatibility."
+        },
+        {
+            "role_id": "ai_engineer",
+            "role_name": "AI Engineer",
+            "category": "Artificial Intelligence",
+            "match_score": 47.46,
+            "matched_skills": [
+                "git",
+                "machine learning",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "deep learning",
+                "natural language processing",
+                "pytorch",
+                "tensorflow"
+            ],
+            "high_priority_gaps": [
+                "deep learning",
+                "natural language processing",
+                "pytorch",
+                "tensorflow"
+            ],
+            "explanation": "Moderate Match (47.46%). Strong skill alignment in [git, machine learning, python]. Focus on acquiring [deep learning, natural language processing] to boost compatibility."
+        },
+        {
+            "role_id": "data_analyst",
+            "role_name": "Data Analyst",
+            "category": "Data Analytics",
+            "match_score": 42.86,
+            "matched_skills": [
+                "pandas",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "data analysis",
+                "data visualization",
+                "excel",
+                "power bi",
+                "tableau"
+            ],
+            "high_priority_gaps": [
+                "data analysis",
+                "data visualization",
+                "excel"
+            ],
+            "explanation": "Potential Growth Fit (42.86%). Strong skill alignment in [pandas, python, sql]. Focus on acquiring [data analysis, data visualization] to boost compatibility."
+        },
+        {
+            "role_id": "python_developer",
+            "role_name": "Python Developer",
+            "category": "Software Engineering",
+            "match_score": 39.62,
+            "matched_skills": [
+                "git",
+                "python",
+                "sql"
+            ],
+            "missing_skills": [
+                "django",
+                "fastapi",
+                "flask",
+                "object-oriented programming",
+                "rest api"
+            ],
+            "high_priority_gaps": [
+                "django",
+                "fastapi",
+                "flask",
+                "rest api"
+            ],
+            "explanation": "Potential Growth Fit (39.62%). Strong skill alignment in [git, python, sql]. Focus on acquiring [django, fastapi] to boost compatibility."
+        }
+    ]
+}

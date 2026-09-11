@@ -1,0 +1,16 @@
+Alex Mercer
+Email: alex.mercer@eval.test | Phone: +1-555-0101
+
+SUMMARY
+Experienced Machine Learning Engineer specializing in model training, PyTorch, Scikit-Learn, and Python pipelines.
+
+SKILLS
+Python, PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, SQL, Machine Learning, Deep Learning, MLOps, Git
+
+EXPERIENCE
+Machine Learning Engineer | Tech Corp (2022 - Present)
+- Built predictive models using Scikit-Learn and PyTorch.
+- Optimized ML data pipelines using Pandas and SQL.
+
+EDUCATION
+BS in Computer Science
