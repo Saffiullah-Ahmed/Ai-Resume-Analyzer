@@ -36,27 +36,30 @@ Traditional Applicant Tracking Systems (ATS) often rely on rigid keyword matchin
 
 ## Architecture Pipeline
 
+```
 [ Upload Resume (PDF/TXT) ] ──► [ Text Extraction Engine ]
-│
-▼
-[ Skill Extraction & Normalization ]
-│
+                                          │
+                                          ▼
+                          [ Skill Extraction & Normalization ]
+                                          │
 [ Target Job Description ] ──► [ TF-IDF Vectorizer & Cosine Sim ]
-│
-▼
-[ Hybrid Match Engine ]
-├─ 70% Skill Intersection
-└─ 30% TF-IDF Similarity
-│
-▼
-[ Streamlit Analytics Dashboard ]
-├─ Match Percentage & Skill Gaps
-└─ Ranked Role Recommendations
+                                          │
+                                          ▼
+                              [ Hybrid Match Engine ]
+                              ├─ 70% Skill Intersection
+                              └─ 30% TF-IDF Similarity
+                                          │
+                                          ▼
+                        [ Streamlit Analytics Dashboard ]
+                        ├─ Match Percentage & Skill Gaps
+                        └─ Ranked Role Recommendations
+```
 
 ---
 
 ## Project Structure
 
+```
 AI-Resume-Analyzer/
 ├── app/                        # Streamlit application dashboard
 │   └── app.py
@@ -69,52 +72,57 @@ AI-Resume-Analyzer/
 ├── tests/                      # Automated test suites
 ├── requirements.txt            # System dependencies
 └── README.md                   # System documentation
+```
+
+---
 
 ## Installation & Setup
 
 1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/Saffiullah-Ahmed/AI-Resume-Analyzer.git](https://github.com/Saffiullah-Ahmed/AI-Resume-Analyzer.git)
+```bash
+   git clone https://github.com/Saffiullah-Ahmed/AI-Resume-Analyzer.git
    cd AI-Resume-Analyzer
+```
 
-## Set Up Virtual Environment:
-
+2. **Set Up Virtual Environment:**
+```bash
    python -m venv venv_test
-.\venv_test\Scripts\Activate.ps1
+   .\venv_test\Scripts\Activate.ps1
+```
 
-## Install Dependencies:
+3. **Install Dependencies:**
+```bash
+   pip install -r requirements.txt
+```
 
-pip install -r requirements.txt
+---
 
 ## Usage
-Run the Streamlit Application:
 
-Bash
-streamlit run app/app.py
-Access Dashboard: Open your browser and navigate to http://localhost:8501.
+1. **Run the Streamlit Application:**
+```bash
+   streamlit run app/app.py
+```
 
-Analyze Resume:
+2. **Access Dashboard:** Open your browser and navigate to `http://localhost:8501`.
 
-Upload candidate resume (.pdf or .txt).
+3. **Analyze Resume:**
+   - Upload candidate resume (`.pdf` or `.txt`).
+   - Paste target job description.
+   - View match percentages, skill gap analysis, and recommended roles.
 
-Paste target job description.
-
-View match percentages, skill gap analysis, and recommended roles.
+---
 
 ## Limitations
-Scanned Image PDFs: Image-only or scanned PDFs without underlying text streams return empty extractions; optical character recognition (OCR) is required for full scanned PDF support.
+* **Scanned Image PDFs:** Image-only or scanned PDFs without underlying text streams return empty extractions; optical character recognition (OCR) is required for full scanned PDF support.
+* **Multi-Column Interleaving:** Complex non-standard multi-column PDF layouts may suffer line-interleaving during standard text-stream extraction.
+* **Dictionary-Bound Taxonomy:** Skill extraction relies on explicit vocabulary lookups and rule-based regex normalization, which may miss unlisted or novel software tools.
 
-Multi-Column Interleaving: Complex non-standard multi-column PDF layouts may suffer line-interleaving during standard text-stream extraction.
-
-Dictionary-Bound Taxonomy: Skill extraction relies on explicit vocabulary lookups and rule-based regex normalization, which may miss unlisted or novel software tools.
+---
 
 ## Future Improvements
-Semantic Vector Embeddings: Integrate dense contextual embeddings (e.g., Sentence-BERT / OpenAI Embeddings) alongside TF-IDF.
-
-Advanced NLP Entity Extraction: Implement Named Entity Recognition (NER) models for dynamic skill detection.
-
-Expanded Skill Ontology: Incorporate comprehensive industry taxonomies (e.g., O*NET, Lightcast API).
-
-OCR Integration: Add Tesseract OCR pipelines to support scanned PDF document extraction.
-
-Expanded Benchmark Datasets: Expand validation benchmarks to multi-thousand resume datasets for real-world statistical validation.
+* **Semantic Vector Embeddings:** Integrate dense contextual embeddings (e.g., Sentence-BERT / OpenAI Embeddings) alongside TF-IDF.
+* **Advanced NLP Entity Extraction:** Implement Named Entity Recognition (NER) models for dynamic skill detection.
+* **Expanded Skill Ontology:** Incorporate comprehensive industry taxonomies (e.g., O*NET, Lightcast API).
+* **OCR Integration:** Add Tesseract OCR pipelines to support scanned PDF document extraction.
+* **Expanded Benchmark Datasets:** Expand validation benchmarks to multi-thousand resume datasets for real-world statistical validation.
