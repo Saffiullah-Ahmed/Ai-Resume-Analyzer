@@ -35,25 +35,11 @@ Traditional Applicant Tracking Systems (ATS) often rely on rigid keyword matchin
 ---
 
 ## Architecture Pipeline
+The system processes resumes and job descriptions through an automated multi-stage pipeline: text extraction, skill entity parsing, dual-metric vector evaluation, and dynamic report rendering.
 
-```
-[ Upload Resume (PDF/TXT) ] ──► [ Text Extraction Engine ]
-                                          │
-                                          ▼
-                          [ Skill Extraction & Normalization ]
-                                          │
-[ Target Job Description ] ──► [ TF-IDF Vectorizer & Cosine Sim ]
-                                          │
-                                          ▼
-                              [ Hybrid Match Engine ]
-                              ├─ 70% Skill Intersection
-                              └─ 30% TF-IDF Similarity
-                                          │
-                                          ▼
-                        [ Streamlit Analytics Dashboard ]
-                        ├─ Match Percentage & Skill Gaps
-                        └─ Ranked Role Recommendations
-```
+### Architecture Diagram
+
+![System Architecture](docs/screenshots/architecture.png)
 
 ---
 
