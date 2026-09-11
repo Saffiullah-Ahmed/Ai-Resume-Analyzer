@@ -45,10 +45,17 @@ def clean_filename_string(s: str) -> str:
 
 
 def extract_text_from_docx(file_stream) -> str:
-    """Extracts plain text from DOCX binary streams."""
+    """Extracts plain text safely from DOCX binary streams or bytes."""
     try:
-        doc = docx.Document(file_stream)
-        return "\n".join([p.text for p in doc.paragraphs if p.text.strip()])
+        if isinstance(file_stream, bytes):
+            buffer = io.BytesIO(file_stream)
+        elif hasattr(file_stream, "read"):
+            buffer = io.BytesIO(file_stream.read())
+        else:
+            buffer = file_stream
+
+        doc = docx.Document(buffer)
+        return "\n".join([p.text.strip() for p in doc.paragraphs if p.text.strip()])
     except Exception as e:
         st.error(f"Error reading DOCX file: {e}")
         return ""
@@ -184,7 +191,6 @@ for key, val in default_session_keys.items():
 # SIDEBAR UI DESIGN
 # -----------------------------------------------------------------------------
 with st.sidebar:
-    # 1. Title Block with Icon Header
     st.markdown(
         """
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
@@ -220,7 +226,6 @@ with st.sidebar:
 
     st.markdown('<hr class="sidebar-divider">', unsafe_allow_html=True)
 
-    # 2. Navigation Items
     app_mode = st.radio(
         label="Sidebar Navigation",
         options=[
@@ -234,7 +239,6 @@ with st.sidebar:
 
     st.markdown('<hr class="sidebar-divider">', unsafe_allow_html=True)
 
-    # 3. About Section
     st.markdown(
         """
         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
@@ -250,7 +254,6 @@ with st.sidebar:
 
     st.markdown('<hr class="sidebar-divider">', unsafe_allow_html=True)
 
-    # 4. Tech Stack Badges
     st.markdown(
         """
         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
@@ -270,7 +273,6 @@ with st.sidebar:
 
     st.markdown('<hr class="sidebar-divider">', unsafe_allow_html=True)
 
-    # 5. Version Footer
     st.markdown(
         """
         <div style="display: flex; align-items: center; gap: 8px; color: #38BDF8; font-size: 13px; font-weight: 600;">
@@ -314,7 +316,7 @@ if is_dashboard:
     
     with col_resume:
         st.markdown('<div class="upload-card-title">📄 Upload Resume</div><p class="upload-card-desc">PDF or DOCX format for automatic parsing.</p>', unsafe_allow_html=True)
-        uploaded_resume = st.file_uploader("Choose file", type=["pdf", "docx"], key=f"resume_uploader_{st.session_state['resume_key']}", label_visibility="collapsed")
+        uploaded_resume = st.file_uploader("Choose file", type=["pdf", "docx", "txt"], key=f"resume_uploader_{st.session_state['resume_key']}", label_visibility="collapsed")
         if uploaded_resume:
             temp_dir = PROJECT_ROOT / "data" / "raw"
             temp_dir.mkdir(parents=True, exist_ok=True)
@@ -352,9 +354,14 @@ if is_dashboard:
                     resume_path = str(st.session_state["temp_pdf_path"])
                     if resume_path.endswith(".pdf"):
                         resume_text = extract_text_from_pdf(resume_path)
-                    else:
+                    elif resume_path.endswith(".docx"):
                         with open(resume_path, "rb") as f:
-                            resume_text = extract_text_from_docx(f)
+                            resume_text = extract_text_from_docx(f.read())
+                    elif resume_path.endswith(".txt"):
+                        with open(resume_path, "r", encoding="utf-8", errors="ignore") as f:
+                            resume_text = f.read()
+                    else:
+                        resume_text = ""
 
                     jd_text = ""
                     if uploaded_jd_file:
@@ -364,7 +371,7 @@ if is_dashboard:
                                 f.write(uploaded_jd_file.getbuffer())
                             jd_text = extract_text_from_pdf(str(temp_jd_path))
                         elif uploaded_jd_file.name.endswith(".docx"):
-                            jd_text = extract_text_from_docx(uploaded_jd_file)
+                            jd_text = extract_text_from_docx(uploaded_jd_file.getvalue())
                         else:
                             jd_text = uploaded_jd_file.read().decode("utf-8")
                     elif pasted_jd.strip():
@@ -377,6 +384,10 @@ if is_dashboard:
 
                     parsed_resume = parse_resume(resume_text)
                     parsed_job = parse_job_description(jd_text)
+
+                    # KEY FIX: Attach full raw text inputs to parsed dictionaries so matcher has complete data
+                    parsed_resume["raw_text"] = resume_text
+                    parsed_job["raw_text"] = jd_text
 
                     raw_name = parsed_resume.get("name") or parsed_resume.get("candidate_name") or "Candidate"
                     clean_name = clean_filename_string(raw_name)
@@ -494,8 +505,19 @@ elif is_recommendations:
                 st.error("Please upload at least one job description file.")
             else:
                 resume_path = str(st.session_state["temp_pdf_path"])
-                resume_text = extract_text_from_pdf(resume_path) if resume_path.endswith(".pdf") else extract_text_from_docx(open(resume_path, "rb"))
+                if resume_path.endswith(".pdf"):
+                    resume_text = extract_text_from_pdf(resume_path)
+                elif resume_path.endswith(".docx"):
+                    with open(resume_path, "rb") as f:
+                        resume_text = extract_text_from_docx(f.read())
+                elif resume_path.endswith(".txt"):
+                    with open(resume_path, "r", encoding="utf-8", errors="ignore") as f:
+                        resume_text = f.read()
+                else:
+                    resume_text = ""
+                
                 parsed_resume = parse_resume(resume_text)
+                parsed_resume["raw_text"] = resume_text
 
                 results_list = []
                 progress_bar = st.progress(0)
@@ -507,17 +529,20 @@ elif is_recommendations:
                             f.write(jd_file.getbuffer())
                         jd_text = extract_text_from_pdf(str(temp_jd))
                     elif jd_file.name.endswith(".docx"):
-                        jd_text = extract_text_from_docx(jd_file)
+                        jd_text = extract_text_from_docx(jd_file.getvalue())
                     else:
                         jd_text = jd_file.read().decode("utf-8")
 
                     parsed_job = parse_job_description(jd_text)
+                    parsed_job["raw_text"] = jd_text
+
                     res = run_job_matching_pipeline(resume_input=parsed_resume, job_input=parsed_job)
                     
                     results_list.append({
                         "Job Title / File": jd_file.name,
                         "Overall Score": f"{res.get('overall_match_score', 0.0):.1f}%",
                         "Skill Match": f"{res.get('required_skills_score', 0.0):.1f}%",
+                        "Text Similarity": f"{res.get('similarity_score', 0.0):.1f}%",
                         "Missing Skills": ", ".join(res.get("missing_skills", [])) or "None"
                     })
                     progress_bar.progress((idx + 1) / len(uploaded_batch_files))

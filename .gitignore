@@ -44,3 +44,5 @@ temp/
 venv/
 venv_test/
 __pycache__/
+
+data/raw/temp_*
